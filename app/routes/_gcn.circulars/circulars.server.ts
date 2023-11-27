@@ -8,9 +8,9 @@
 import { tables } from '@architect/functions'
 import type { DynamoDB } from '@aws-sdk/client-dynamodb'
 import { type DynamoDBDocument } from '@aws-sdk/lib-dynamodb'
-import { search as getSearch } from '@nasa-gcn/architect-functions-search'
 import { DynamoDBAutoIncrement } from '@nasa-gcn/dynamodb-autoincrement'
 import { redirect } from '@remix-run/node'
+import { search as getSearch } from 'architect-functions-search'
 import memoizee from 'memoizee'
 
 import { type User, getUser } from '../_gcn._auth/user.server'

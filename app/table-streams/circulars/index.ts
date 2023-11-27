@@ -10,8 +10,8 @@ import type { AttributeValue } from '@aws-sdk/client-dynamodb'
 import { paginateQuery, paginateScan } from '@aws-sdk/lib-dynamodb'
 import type { DynamoDBDocument } from '@aws-sdk/lib-dynamodb'
 import { unmarshall } from '@aws-sdk/util-dynamodb'
-import { search as getSearchClient } from '@nasa-gcn/architect-functions-search'
 import { errors } from '@opensearch-project/opensearch'
+import { search as getSearchClient } from 'architect-functions-search'
 import type {
   DynamoDBRecord,
   AttributeValue as LambdaTriggerAttributeValue,
