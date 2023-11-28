@@ -124,6 +124,8 @@ availabilityZoneCount 3
 volumeSize 10
 dedicatedMasterCount 3
 dedicatedMasterType t3.small.search
+# Use OpenSearch in sandbox mode; default is Elasticsearch.
+sandboxEngine opensearch
 
 @plugins
 plugin-remix
@@ -133,5 +135,5 @@ staticBucketPermissions  # Functions may only write to the /generated directory 
 missionCloudPlatform  # Custom permissions for deployment on Mission Cloud Platform
 emailOutgoing  # Grant the Lambda function permission to send email; add email templates.
 email-incoming  # Enable Lambda handlers for incoming emails
-nasa-gcn/architect-plugin-search  # Add an AWS OpenSearch Serverless collection.
+architect-plugin-search  # Add an AWS OpenSearch Serverless collection.
 architect/plugin-lambda-invoker
