@@ -2,10 +2,10 @@
 This file contains API calls to the OpenSearch cluster to register and deploy an ml model to the opensearch cluster.
 It also creates a neural ingest pipeline to allow for ingesting of documents into a knn index.
 */
-import { search as getSearch } from 'architect-functions-search'
+import { search as getSearchClient } from 'architect-functions-search'
 
 export default async function () {
-  const client = await getSearch()
+  const client = await getSearchClient()
 
   //Set cluster settings
   const cluster_settings_request = {
