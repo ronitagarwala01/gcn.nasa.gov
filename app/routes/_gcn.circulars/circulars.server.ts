@@ -131,7 +131,7 @@ export async function search({
   }
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-const nlpSearchQuery = query
+  const nlpSearchQuery = query
     ? {
         bool: {
           must: [
@@ -143,7 +143,7 @@ const nlpSearchQuery = query
                   k: 100,
                 },
               },
-            }
+            },
           ],
           filter: {
             range: {
